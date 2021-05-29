@@ -26,7 +26,9 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDate" class="lead"></p>
+      <!-- Current day is displayed at the top of the calendar -->
+      <div class="currentDate lead"></div>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -39,8 +41,16 @@
            https://jqueryui.com/selectable/
       -->
 
-      <!-- THEN the current day is displayed at the top of the calendar -->
-        <p>Today's Date is: </p>
+        <form id="calendar-form">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="event-data">Event Data</label>
+              <input type="text" class="form-input" name="event-data" placeholder="Enter Event Description" />
+            </div>
+          </div>
+
+          <button class="btn btn-block btn-danger">Submit Event</button>
+        </form>
 
       <!-- WHEN I scroll down
       THEN I am presented with timeblocks for standard business hours 

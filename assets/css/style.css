@@ -69,3 +69,19 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* Define calendar as a grid container. */
+.container {
+  display: grid;
+  border: #000000;
+  /* grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 10%; */
+}
+    
+.grid {
+  display: grid;
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  border:black;
+
+}

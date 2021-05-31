@@ -78,10 +78,18 @@ textarea {
   grid-template-rows: 10%; */
 }
     
-.grid {
+.three-column-grid {
   display: grid;
   margin: 5rem auto;
   width: min(90%, 75rem);
   border:black;
-
+  grid-template-columns: 20% auto 20%;
+  /* grid-auto-flow: row; */
+  gap: 1em;
 }
+
+/* @media (min-width: 55em) {
+  .columns {
+    grid-template-columns: 10% auto 10%;
+  }
+} */
